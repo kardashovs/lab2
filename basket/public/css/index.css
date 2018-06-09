@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: aria;
+}
+
+
+.main {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.goods {
+    padding: .5rem;
+    margin-right: 5rem;
+    width: 430px;
+}
+
+.page__basket .good {
+  width: 50%;
+  display: inline-block;
+}
+
+.good {
+    padding: .5rem;
+    text-align: center;
+    display: inline-block;
+    min-width: 45%;
+  border-radius: 10px
+}
+
+.good:not(:last-of-type) {
+    margin-bottom: .5rem;
+}
+
+.good__count {
+    position: absolute;
+    right: .5rem;
+    top: 0;
+}
+
+.good__title {
+    margin: 0 0 .5rem;
+}
+
+.basket__info {
+    left: calc((100% - 150px) / 2);
+    position: absolute;
+    text-align: center;
+    top: calc((100% - 24px) / 2);
+}
+
+.basket__goods-container .good {
+    margin: 0;
+    min-height: calc((453px - 1px *2) / 5);
+    position: relative;
+    border: 2px solid #fff;
+}
+
+.basket {
+    min-height: 100px;
+    margin-left: 5rem;
+    position: relative;
+    width: 453px;
+  border-radius: 10px
+}
+
+.basket__progress {
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+  border-radius: 10px;
+}
+
+.progress-vertical {
+    align-items: flex-end;
+    width: 453px;
+    height: 30px;
+}
+
+.progress-vertical .progress-bar {
+    height: 30px;
+    width: 0%;
+}
+
+.progress-bar {
+    transition: all 0.3s linear;
+}
+
+/* Misc */
+.center-text {
+    text-align: center;
+}
+
+.center-block {
+    margin: 0 auto;
+}
+
+.bg-dark {
+  background: rgba(0,255,0, .1) !important;
+}
+
+.page__goods {
+  background: none !important;
+}
+
+.progress-bar-striped {
+  background-image: none;
+}

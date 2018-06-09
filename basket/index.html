@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Потребительская корзина">
+        
+        <title>корзина</title>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+              rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              rel="stylesheet">
+        <link rel="stylesheet" href="public/css/index.css">
+    </head>
+    <body class="page page_end-point">
+        
+<!--        <h4 id="author"></h4>-->
+        
+        <h2 class="budget page__budget center-text">
+            <span style="padding-right: 200px">Кардашов Сергей</span>  Баланс: $<span class="budget__budget-value"></span>
+        </h2>
+        <br>
+        <main class="main page__main">
+            <div class="bg-dark goods page__goods">
+                <div id="good-1" class="bg-success text-light good goods__good" draggable="true" style="background-color: #0000ff !important">
+                    <span id="good-1-count" class="good__count"></span>
+                    <h3 class="good__title">Macbook</h3>
+                    <span class="good__price" data-price="10">$10</span>
+                </div>
+                <div id="good-2" class="bg-success text-light good goods__good" draggable="true" style="background-color: darkred !important">
+                    <span id="good-2-count" class="good__count"></span>
+                    <h3 class="good__title">Iphone</h3>
+                    <span class="good__price" data-price="20">$20</span>
+                </div>
+                <div id="good-3" class="bg-success text-light good goods__good" draggable="true">
+                    <span id="good-3-count" class="good__count"></span>
+                    <h3 class="good__title">Samsung</h3>
+                    <span class="good__price" data-price="30">$30</span>
+                </div>
+                <div id="good-4" class="bg-danger text-light good goods__good" draggable="true">
+                    <span id="good-4-count" class="good__count"></span>
+                    <h3 class="good__title">Toshiba</h3>
+                    <span class="good__price" data-price="40">$40</span>
+                </div>
+                <div id="good-5" class="bg-danger text-light good goods__good" draggable="true" style="background-color: blueviolet!important">
+                    <span id="good-5-count" class="good__count"></span>
+                    <h3 class="good__title">Sony</h3>
+                    <span class="good__price" data-price="50">$50</span>
+                </div>
+            </div>
+            <div class="bg-dark border border-dark basket page__basket">
+                <span class="text-dark basket__info">
+                    Перетащи сюда товар
+                </span>
+                <div class="basket__goods-container"></div>
+                <div class="bg-dark progress progress-vertical basket__progress">
+                    <div class="progress-bar progress-bar-striped basket__progress-bar">
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="./public/js/index.js"></script>
+    </body>
+</html>
